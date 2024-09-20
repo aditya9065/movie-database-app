@@ -1,9 +1,7 @@
-// src/App.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './App.css'; // Optional for styling
+import './App.css';
 
-// MovieCard Component
 const MovieCard = ({ movie }) => {
   console.log("kjdsfak",movie)
   return(
@@ -23,7 +21,6 @@ const App = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch movies from API
   useEffect(() => {
     const fetchMovies = async () => {
       try {
